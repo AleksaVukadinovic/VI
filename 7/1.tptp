@@ -1,0 +1,9 @@
+% Svako ko je bogat je i srecan
+% Ana je bogata
+% Da li je Ana srecna?
+% promenljive uvel velikim slovima
+% predikati i konstante uvek malim slovima
+
+fof(a1, axiom, ![X]: (bogat(X) => srecan(X))).
+fof(a2, axiom, bogat(ana)).
+fof(c1, conjecture, srecan(ana)).

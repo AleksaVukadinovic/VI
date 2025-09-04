@@ -1,0 +1,14 @@
+% Svako ima rodjaka na moru ili na planini.
+% Ko ima rodjaka na moru, bio je na moru.
+% Ko ima rodjaka na planini, bio je na planini.
+% Neko nije bio ni na moru, ni na planini.
+
+% rm(X) - x ima rodjaka na moru
+% rp(X) - x ima rodjaka na planini
+% m(X) - x je bio na moru
+% p(X) - x je bio na planini
+
+fof(a1, axiom, ![X]: (rm(X) | pm(X))).
+fof(a2, axiom, ![X]: (rm(X) => m(X))).
+fof(a2, axiom, ![X]: (rp(X) => p(X))).
+fof(c1, conjecture, ?[X]: (~m(X) & ~p(X))).

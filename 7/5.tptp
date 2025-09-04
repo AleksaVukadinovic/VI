@@ -1,0 +1,16 @@
+% Ko laze taj krade.
+% Ko krade i uhvacen je u kradji, taj ide u zatvor
+% Al Kapone laze
+% Al Kapone je uhvacen u kradji
+% Laki Luciano laze
+
+% l(X) - x laze
+% k(X) - x krade
+% u(X) - x je uhvacen
+% z(X) - x ide u zatvor
+
+fof(a1, axiom, (![X]: (l(X) => k(X)))).
+fof(a2, axiom, (![X]: ((k(X) & u(X)) => z(X)))).
+fof(a3, axiom, l(alkapone)).
+fof(a4, axiom, u(alkapone)).
+fof(c1, conjecture, ~l(la))

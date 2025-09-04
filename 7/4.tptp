@@ -1,0 +1,12 @@
+% Ako postoji cipela koja u svakom trenutku odgovara svakoj nozi,
+% onda za svaku nogu postoji cipela koja joj je u nekom trenutku 
+% odgovara i za svaku nogu postoji trenutak takav da postoji cipela 
+% koja joj u tom trenutku odgovara.
+
+% A => (B & C)
+
+% T - trenutak, N - noga, C - cipela
+% odgovara(N, T, C)
+
+fof(a1, axiom, (?[C]: (![T, N]: (odgovara(N, T, C))))).
+fof(c1, conjecture, (![N]: (?[C, T]: odgovara(N, T, C))) & (![N]: (?[T]: (?[C]: odgovara(N, T, C))))).
