@@ -82,7 +82,6 @@ class XOState:
         print(' | '.join(self.board[0]))
         print(' | '.join(self.board[1]))
         print(' | '.join(self.board[2]))
-        print
         
 def get_winner(game):
     board = game.board
