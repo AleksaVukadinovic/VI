@@ -237,6 +237,7 @@ if __name__ == "__main__":
 
     A, B, C, D = vars("A,B,C,D")
     formula = (B | D) & ~(B & D) & (A | C) & ~(A & C)
+    evaluate_formula(formula)
 
     '''
     U iskoznoj logici zapisati da je 4 bitna reprezentacija broja palindrom ali da 
